@@ -1,9 +1,9 @@
-﻿<Window x:Class="PI_App.MainWindow"
+﻿<Window x:Class="WellMy.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PI_App"
+        xmlns:local="clr-namespace:WellMy"
         mc:Ignorable="d"
         Title="MainWindow" Height="560" Width="350" WindowStyle="SingleBorderWindow">
 
