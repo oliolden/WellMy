@@ -5,20 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WellMy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="560" Width="350" WindowStyle="SingleBorderWindow">
+        Title="LoginWindow" Height="560" Width="350" WindowStyle="SingleBorderWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
-    <Grid Width="354" Height="550" Background="WhiteSmoke">
+    <Grid Height="570" Background="White">
         <Image HorizontalAlignment="Center" Height="200" VerticalAlignment="Top" Width="200" Source="/Logo.png" Margin="0,-6,0,0"/>
         <TextBox x:Name="username_txtb" VerticalContentAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="172" Height="32" RenderTransformOrigin="0.5,0.5" TabIndex="1"/>
         <TextBox x:Name="password_txtb" VerticalContentAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Height="32" RenderTransformOrigin="0.5,0.5" Margin="0,297,0,0" TabIndex="2"/>
         <Label Content="Login" HorizontalAlignment="Center" Margin="0,228,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black" Foreground="#FF848484"/>
-        <Button x:Name="login_btn" Content="Login" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Width="102" Height="28" FontFamily="Bahnschrift" FontSize="16" TabIndex="3">
+        <Button x:Name="login_btn" Content="Login" HorizontalAlignment="Center" Margin="0,340,0,0" VerticalAlignment="Top" Width="110" Height="30" FontFamily="Bahnschrift" FontSize="16" TabIndex="3" BorderBrush="#00000000">
             <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FF298873" Offset="0.997"/>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF298873" Offset="1"/>
                     <GradientStop Color="#FF38B999" Offset="0"/>
-                </RadialGradientBrush>
+                </LinearGradientBrush>
             </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
         </Button>
         <Label Content="Your idol as you personal trainer" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed" FontSize="20" Foreground="#FF356969"/>
     </Grid>
